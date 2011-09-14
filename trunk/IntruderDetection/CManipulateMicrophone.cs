@@ -45,44 +45,60 @@ namespace ManipulateMicrophone
 
         private void SoundBufferFull(byte[] buffer)
         {
-            if (echo==true)
+            if(enabled==true)
             {
-                m_SoundOutput.Play(buffer, 0, buffer.Length);
-            }            
-            double s = 0;
-            for (int i = 0; i < buffer.Length; i++)
-            {
-                m_SoundBuffer[i] = buffer[i];
-                s += Math.Abs(((float)buffer[i] - 128.0) / 255);
-            }
-            m_SoundEnergy = s;
-            pb.Value = (int)(s / 400 * 100);
-
-            if (saveflag==true)
-            {
-                if (saved==true)
+                if (echo == true)
                 {
-                    saved = false;
-                    DateTime DT = DateTime.Now;
-                    string dir = DT.ToString("yyyy-MM-dd-H");
-                    dir = Application.StartupPath + @"\sound\" + dir + @"\";
-                    if (!Directory.Exists(dir))
-                    {
-                        Directory.CreateDirectory(dir);
-                    }
-                    string fname = dir + DT.ToString("mm-ss-ff") + ".wav";
-                    wavwrite = new WaveStreamWriter(fname, 8000, 1, 8);                    
+                    m_SoundOutput.Play(buffer, 0, buffer.Length);
                 }
-                wavwrite.Write(buffer, 400);
+                double s = 0;
+                for (int i = 0; i < buffer.Length; i++)
+                {
+                    m_SoundBuffer[i] = buffer[i];
+                    s += Math.Abs(((float)buffer[i] - 128.0) / 255);
+                }
+                m_SoundEnergy = s;
+                int se = (int)(s * 2);
+                if (se<100)
+                {
+                    pb.Value = se;
+                }
+                else
+                {
+                    pb.Value = 100;
+                }
+
+                if (saveflag == true)
+                {
+                    if (saved == true)
+                    {
+                        saved = false;
+                        DateTime DT = DateTime.Now;
+                        string dir = DT.ToString("yyyy-MM-dd-H");
+                        dir = Application.StartupPath + @"\sound\" + dir + @"\";
+                        if (!Directory.Exists(dir))
+                        {
+                            Directory.CreateDirectory(dir);
+                        }
+                        string fname = dir + DT.ToString("mm-ss-ff") + ".wav";
+                        wavwrite = new WaveStreamWriter(fname, 8000, 1, 8);
+                    }
+                    wavwrite.Write(buffer, 400);
+                }
+                else
+                {
+                    if (saved == false)
+                    {
+                        wavwrite.Dispose();
+                        saved = true;
+                    }
+                }
             }
             else
             {
-                if (saved==false)
-                {
-                    wavwrite.Dispose();
-                    saved = true;
-                }      
+                pb.Value = 0;
             }
+            
         }
 
         public double getSoundEnergy()

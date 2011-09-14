@@ -69,6 +69,8 @@
             // checkVideo
             // 
             this.checkVideo.AutoSize = true;
+            this.checkVideo.Checked = true;
+            this.checkVideo.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkVideo.Location = new System.Drawing.Point(11, 27);
             this.checkVideo.Name = "checkVideo";
             this.checkVideo.Size = new System.Drawing.Size(114, 16);
@@ -79,9 +81,7 @@
             // checkSound
             // 
             this.checkSound.AutoSize = true;
-            this.checkSound.Checked = true;
-            this.checkSound.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkSound.Location = new System.Drawing.Point(11, 59);
+            this.checkSound.Location = new System.Drawing.Point(10, 20);
             this.checkSound.Name = "checkSound";
             this.checkSound.Size = new System.Drawing.Size(114, 16);
             this.checkSound.TabIndex = 2;
@@ -110,7 +110,9 @@
             // checkVideoAlarm
             // 
             this.checkVideoAlarm.AutoSize = true;
-            this.checkVideoAlarm.Location = new System.Drawing.Point(22, 19);
+            this.checkVideoAlarm.Checked = true;
+            this.checkVideoAlarm.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkVideoAlarm.Location = new System.Drawing.Point(11, 57);
             this.checkVideoAlarm.Name = "checkVideoAlarm";
             this.checkVideoAlarm.Size = new System.Drawing.Size(90, 16);
             this.checkVideoAlarm.TabIndex = 6;
@@ -120,7 +122,7 @@
             // checkOpenEcho
             // 
             this.checkOpenEcho.AutoSize = true;
-            this.checkOpenEcho.Location = new System.Drawing.Point(22, 67);
+            this.checkOpenEcho.Location = new System.Drawing.Point(10, 67);
             this.checkOpenEcho.Name = "checkOpenEcho";
             this.checkOpenEcho.Size = new System.Drawing.Size(84, 16);
             this.checkOpenEcho.TabIndex = 7;
@@ -130,14 +132,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkSound);
             this.groupBox1.Controls.Add(this.checkVideo);
+            this.groupBox1.Controls.Add(this.checkVideoAlarm);
             this.groupBox1.Location = new System.Drawing.Point(357, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(136, 90);
+            this.groupBox1.Size = new System.Drawing.Size(133, 90);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Choice1";
+            this.groupBox1.Text = "Video";
             // 
             // panelVideoAlarm
             // 
@@ -177,20 +179,20 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkSound);
             this.groupBox2.Controls.Add(this.checkSoundAlarm);
-            this.groupBox2.Controls.Add(this.checkVideoAlarm);
             this.groupBox2.Controls.Add(this.checkOpenEcho);
             this.groupBox2.Location = new System.Drawing.Point(503, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(133, 90);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Choice2";
+            this.groupBox2.Text = "Sound";
             // 
             // checkSoundAlarm
             // 
             this.checkSoundAlarm.AutoSize = true;
-            this.checkSoundAlarm.Location = new System.Drawing.Point(22, 43);
+            this.checkSoundAlarm.Location = new System.Drawing.Point(10, 43);
             this.checkSoundAlarm.Name = "checkSoundAlarm";
             this.checkSoundAlarm.Size = new System.Drawing.Size(90, 16);
             this.checkSoundAlarm.TabIndex = 6;
