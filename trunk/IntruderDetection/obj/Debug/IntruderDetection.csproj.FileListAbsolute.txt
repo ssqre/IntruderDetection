@@ -12,6 +12,9 @@ E:\work_codeproject\intruderdetection\IntruderDetection\bin\Debug\IntruderDetect
 E:\work_codeproject\intruderdetection\IntruderDetection\bin\Debug\DirectShowLib.dll
 E:\work_codeproject\intruderdetection\IntruderDetection\bin\Debug\ManipulateMicrophone.dll
 E:\work_codeproject\intruderdetection\IntruderDetection\bin\Debug\WaveStream.dll
+E:\work_codeproject\intruderdetection\IntruderDetection\bin\Debug\DirectShowLib.pdb
+E:\work_codeproject\intruderdetection\IntruderDetection\bin\Debug\WaveStream.pdb
+E:\work_codeproject\intruderdetection\IntruderDetection\bin\Debug\ManipulateMicrophone.pdb
 E:\work_codeproject\intruderdetection\IntruderDetection\obj\Debug\ResolveAssemblyReference.cache
 E:\work_codeproject\intruderdetection\IntruderDetection\obj\Debug\IntruderDetection.MainForm.resources
 E:\work_codeproject\intruderdetection\IntruderDetection\obj\Debug\IntruderDetection.Properties.Resources.resources

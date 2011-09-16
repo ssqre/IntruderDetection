@@ -41,6 +41,7 @@ namespace ManipulateMicrophone
         {
             m_SoundInput.Stop();
             enabled = false;
+            m_SoundEnergy = 0;
         }
 
         private void SoundBufferFull(byte[] buffer)
@@ -58,7 +59,7 @@ namespace ManipulateMicrophone
                     s += Math.Abs(((float)buffer[i] - 128.0) / 255);
                 }
                 m_SoundEnergy = s;
-                int se = (int)(s * 2);
+                int se = (int)s;
                 if (se<100)
                 {
                     pb.Value = se;

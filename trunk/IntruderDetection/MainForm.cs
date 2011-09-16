@@ -203,7 +203,8 @@ namespace IntruderDetection
                 if (imm.Enabled==true)
                 {
                     imm.Stop();                    
-                }                
+                }
+                progressSound.Value = 0;
             }
         }
 

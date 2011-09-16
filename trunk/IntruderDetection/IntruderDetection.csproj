@@ -34,14 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DirectShowLib, Version=2.1.0.37138, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\DirectShowLib.dll</HintPath>
-    </Reference>
-    <Reference Include="ManipulateMicrophone, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\ManipulateMicrophone.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -57,10 +49,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="WaveStream, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\WaveStream.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CaptureImage.cs" />
@@ -98,6 +86,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DirectShowLib\DirectShowLib.csproj">
+      <Project>{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}</Project>
+      <Name>DirectShowLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManipulateMicrophone\ManipulateMicrophone.csproj">
+      <Project>{CC1BEB0F-C633-46A2-90F5-74586E77838B}</Project>
+      <Name>ManipulateMicrophone</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaveStream\WaveStream.csproj">
+      <Project>{34044D06-E5BF-42E4-A45B-B107D90558E9}</Project>
+      <Name>WaveStream</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
