@@ -1,0 +1,10 @@
+E:\work_temp\intruderdetection\WaveStream\WaveStream\bin\Debug\WaveStream.dll
+E:\work_temp\intruderdetection\WaveStream\WaveStream\bin\Debug\WaveStream.pdb
+E:\work_temp\intruderdetection\WaveStream\WaveStream\obj\Debug\ResolveAssemblyReference.cache
+E:\work_temp\intruderdetection\WaveStream\WaveStream\obj\Debug\WaveStream.dll
+E:\work_temp\intruderdetection\WaveStream\WaveStream\obj\Debug\WaveStream.pdb
+E:\work_codeproject\intruderdetection\WaveStream\bin\Debug\WaveStream.dll
+E:\work_codeproject\intruderdetection\WaveStream\bin\Debug\WaveStream.pdb
+E:\work_codeproject\intruderdetection\WaveStream\obj\Debug\ResolveAssemblyReference.cache
+E:\work_codeproject\intruderdetection\WaveStream\obj\Debug\WaveStream.dll
+E:\work_codeproject\intruderdetection\WaveStream\obj\Debug\WaveStream.pdb
