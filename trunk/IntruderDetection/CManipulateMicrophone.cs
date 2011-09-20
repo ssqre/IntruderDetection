@@ -12,20 +12,21 @@ namespace ManipulateMicrophone
 {
     class CManipulateMicrophone:IManipulateMicrophone
     {
-        private bool enabled = false;
+        private bool enabled = false;// whether use sound detection
         private WaveIn m_SoundInput;
         private WaveOut m_SoundOutput;
         private double m_SoundEnergy = 0;
         private byte[] m_SoundBuffer = new byte[400];
         private ProgressBar pb;
-        private bool saveflag = false;
-        private bool saved = true;
+        private bool saveflag = false;// whether save abnormal sound
+        private bool saved = true;// abnormal sound have been saved?
         private bool echo = false;
         private WaveStreamWriter wavwrite = null;
 
         public CManipulateMicrophone(ProgressBar pb)
         {
             this.pb = pb;
+            this.pb.Value = 0;
             m_SoundInput = new WaveIn(WaveIn.Devices[0], 8000, 8, 1, 400);
             m_SoundInput.BufferFull += new BufferFullHandler(SoundBufferFull);
             m_SoundOutput = new WaveOut(WaveOut.Devices[0], 8000, 8, 1);

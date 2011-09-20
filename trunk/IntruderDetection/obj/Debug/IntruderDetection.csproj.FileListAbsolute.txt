@@ -21,5 +21,3 @@ E:\work_codeproject\intruderdetection\IntruderDetection\obj\Debug\IntruderDetect
 E:\work_codeproject\intruderdetection\IntruderDetection\obj\Debug\IntruderDetection.csproj.GenerateResource.Cache
 E:\work_codeproject\intruderdetection\IntruderDetection\obj\Debug\IntruderDetection.exe
 E:\work_codeproject\intruderdetection\IntruderDetection\obj\Debug\IntruderDetection.pdb
-E:\intruderdetection\IntruderDetection\obj\Debug\IntruderDetection.exe
-E:\intruderdetection\IntruderDetection\obj\Debug\IntruderDetection.pdb

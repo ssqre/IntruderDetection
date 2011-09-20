@@ -41,7 +41,7 @@ namespace IntruderDetection
             timerVideo.Start();
 
             imm = new CManipulateMicrophone(progressSound);
-            imm.Start();
+            //imm.Start();
             timerSound.Interval = 250;
             timerSound.Start();
 
@@ -222,7 +222,7 @@ namespace IntruderDetection
             }
             soundnum++;
 
-            if (soundnum > 5)
+            if (soundnum > 7)
             {
                 soundnum = 0;
                 timerSoundAlarm.Stop();
