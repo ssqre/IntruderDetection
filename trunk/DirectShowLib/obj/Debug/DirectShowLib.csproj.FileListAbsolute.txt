@@ -1,0 +1,6 @@
+E:\work_codeproject\intruderdetection\DirectShowLib\bin\Debug\DirectShowLib.dll.config
+E:\work_codeproject\intruderdetection\DirectShowLib\bin\Debug\DirectShowLib.dll
+E:\work_codeproject\intruderdetection\DirectShowLib\bin\Debug\DirectShowLib.pdb
+E:\work_codeproject\intruderdetection\DirectShowLib\obj\Debug\ResolveAssemblyReference.cache
+E:\work_codeproject\intruderdetection\DirectShowLib\obj\Debug\DirectShowLib.dll
+E:\work_codeproject\intruderdetection\DirectShowLib\obj\Debug\DirectShowLib.pdb
