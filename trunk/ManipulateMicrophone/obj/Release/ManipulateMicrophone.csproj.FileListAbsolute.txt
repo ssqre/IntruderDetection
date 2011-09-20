@@ -1,5 +1,0 @@
-E:\work_temp\intruderdetection\ManipulateMicrophone\ManipulateMicrophone\bin\Release\ManipulateMicrophone.dll
-E:\work_temp\intruderdetection\ManipulateMicrophone\ManipulateMicrophone\bin\Release\ManipulateMicrophone.pdb
-E:\work_temp\intruderdetection\ManipulateMicrophone\ManipulateMicrophone\obj\Release\ResolveAssemblyReference.cache
-E:\work_temp\intruderdetection\ManipulateMicrophone\ManipulateMicrophone\obj\Release\ManipulateMicrophone.dll
-E:\work_temp\intruderdetection\ManipulateMicrophone\ManipulateMicrophone\obj\Release\ManipulateMicrophone.pdb
